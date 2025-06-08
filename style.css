@@ -45,3 +45,7 @@ tr:first-child {
 .ACButton {
     background-color: #656165;
 }
+
+#customFunctionButton {
+    background-color: lightgray;
+}

@@ -56,3 +56,28 @@ function equalBtnPressed() {
     document.getElementById("inputBox").value = finalTotal;
     newLine = true;
 }
+
+// Event handler for when the customFunction buttons are pressed
+
+function customFunction(type) {
+    let current = parseFloat(document.getElementById('inputBox').value);
+
+    if (isNaN(current)) return;
+
+    switch(type) {
+        case 'sqrt':
+            current = Math.sqrt(current);
+            break;
+        case 'pow2':
+            current = Math.pow(current, 2);
+            break;
+        case 'pow3':
+            current = Math.pow(current, 3);
+            break;
+    }
+
+    document.getElementById('inputBox').value = current;
+    newLine = true;
+}
+
+
